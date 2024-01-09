@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>System</title>
+</head>
+<body>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="logout" class="btn btn-danger"/>
+    </form>
+    <h2>SYSTEM Home Page - Say Hello</h2>
+    <hr>
+    Welcome to the system home page!
+    <br><br>
+    <!-- User information -->
+    <a th:href="@{/}">back to home page</a>
+</body>
+</html>

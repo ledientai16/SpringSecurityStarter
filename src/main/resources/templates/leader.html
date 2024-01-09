@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Leader</title>
+</head>
+<body>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="logout" class="btn btn-danger"/>
+    </form>
+
+    <h2>Leader Home Page - Say Hello</h2>
+    <hr>
+    Welcome to the leader home page
+    <br><br>
+    <a th:href="@{/}">back to home page</a>
+</body>
+</html>

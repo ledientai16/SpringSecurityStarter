@@ -20,6 +20,12 @@
     <p>
         Role: <span sec:authentication="principal.authorities"></span>
     </p>
+    <div sec:authorize="hasRole('LEADER')">
+        <p>
+            <a th:href="@{/leader}">Leader meeting</a>
+            (Only for manager)
+        </p>
+    </div>
     <hr>
     <a th:href="@{/leader}">Go to lead page</a>
     <a th:href="@{/system}">Go to system page</a>
